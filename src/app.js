@@ -8,9 +8,6 @@ const app = async (yargsObj) => {
     if (yargsObj.add){ 
         // add movie to database from yarg input
         await addMovie({title:yargsObj.title, actor: yargsObj.actor})
-    } else if (yargsObj.list) { 
-        // find movie
-
     } else if (yargsObj.update){ 
         // update movie
         await updateMovie({title: yargsObj.title, newTitle: yargsObj.newTitle})
